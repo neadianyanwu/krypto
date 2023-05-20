@@ -78,7 +78,7 @@ h1,h2,h3,h4,h5,h6 {
 #navbarNav a:hover::before, #navbarNav li:hover > a::before,
 #navbarNav .active > a::before {
     visibility: visible;
-    width: 10%;
+    width: 50%;
 }
 
 #navbarNav a:hover, #navbarNav .active > a, #navbarNav li:hover > a {

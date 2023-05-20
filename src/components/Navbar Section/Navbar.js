@@ -9,7 +9,7 @@ import React, { Component } from 'react'
 const Navbar = () => {
   return (
    <section>
-        <header id="header" className="fixed-top">
+        <header id="header" className="">
           <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
               <h1 className="logo mr-auto"><a class="navbar-brand" href="#">Krypto</a></h1>
