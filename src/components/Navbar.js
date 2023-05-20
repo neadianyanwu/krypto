@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import "./Navbar.css";
+import { LoremIpsum } from 'lorem-ipsum';
 
 import React, { Component } from 'react'
 
@@ -12,7 +13,7 @@ const Navbar = () => {
           <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
               <h1 className="logo mr-auto"><a class="navbar-brand" href="#">Krypto</a></h1>
-              <button className="navbar-toggler d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <button className="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="toggler-icon top-bar"></span>
                 <span className="toggler-icon middle-bar"></span>
                 <span className="toggler-icon bottom-bar"></span> 

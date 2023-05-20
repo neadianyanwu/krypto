@@ -97,6 +97,11 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 400;
     border: 2px solid #af9271;
     width: 24vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 .get-started-btn:hover {
@@ -109,6 +114,11 @@ h1,h2,h3,h4,h5,h6 {
     .get-started-btn {
         margin: 0 48px 0 70px;
         padding: 6px 18px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
     }
 }
 
@@ -129,4 +139,60 @@ h1,h2,h3,h4,h5,h6 {
 .navbar-toggler span {
     margin: 0;
     padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #e9cfa8;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+/* Section: When Nav is Clicked */
+
+.navbar-toggler .top-bar {
+    margin-top: 0px;
+    transform: rotate(135deg);
+} 
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    margin-top: 0px;
+    transform: rotate(-135deg);
+}
+
+/* Section: when the Navbar is Collapsed */
+
+.collapsed .top-bar {
+    margin-top: -20px;
+    transform: rotate(0deg);
+}
+
+.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.collapsed .bottom-bar {
+    margin-top: 20px;
+    transform: rotate(0deg);
+}
+
+/* Section: Span Gradients */
+.collapsed .toggler-icon {
+    background: linear-gradient(263deg, rgb(143,137,169) 0%, rgb(231,204,186) 100%);
 }
