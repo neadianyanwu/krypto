@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import "./Navbar.css";
-import { LoremIpsum } from 'lorem-ipsum';
+
 
 import React, { Component } from 'react'
 
@@ -34,7 +34,7 @@ const Navbar = () => {
                   </li>
                 </ul>
 
-                <a href="#" className="get-started-btn scrollto">Get Started</a>
+                <a href="#" className="btn btn-primary">Get Started</a>
               </div>
             </div>
           </nav>
